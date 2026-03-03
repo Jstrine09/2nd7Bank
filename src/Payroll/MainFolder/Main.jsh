@@ -69,10 +69,8 @@ class ReadData {
 public class Main{ 
 public static void main(String[] args) {
         ArrayList<Timecard> input_data = ReadData.readData("./src/Payroll/MainFolder/input.data");
-        System.out.println(input_data);
 
         for (Timecard t : input_data) {
-            System.out.println(t);
             double grossPay = t.HoursWorked * t.HourlyRate;
             PayrollEvent payrollEvent = new PayrollEvent(t.Name, t.HoursWorked, t.HourlyRate, grossPay);
             System.out.println(payrollEvent);
