@@ -72,6 +72,7 @@ public static void main(String[] args) {
         System.out.println(input_data);
 
         for (Timecard t : input_data) {
+            System.out.println(t);
             double grossPay = t.HoursWorked * t.HourlyRate;
             PayrollEvent payrollEvent = new PayrollEvent(t.Name, t.HoursWorked, t.HourlyRate, grossPay);
             System.out.println(payrollEvent);
