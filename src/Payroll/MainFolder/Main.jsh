@@ -68,7 +68,7 @@ class ReadData {
 
 public class Main{ 
 public static void main(String[] args) {
-        ArrayList<Timecard> input_data = ReadData.readData("input.data");
+        ArrayList<Timecard> input_data = ReadData.readData("./src/Payroll/MainFolder/input.data");
         System.out.println(input_data);
 
         for (Timecard t : input_data) {
