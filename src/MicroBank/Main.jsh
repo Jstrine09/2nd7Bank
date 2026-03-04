@@ -43,11 +43,6 @@ class ReadData {
             Scanner scanner = new Scanner(file);
             ArrayList<Transaction> data = new ArrayList<>();
             
-            // Skip header line
-            if (scanner.hasNextLine()) {
-                scanner.nextLine();
-            }
-            
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",");
